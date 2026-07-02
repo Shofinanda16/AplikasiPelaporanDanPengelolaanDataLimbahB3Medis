@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f3f5f9;
+    color: #1e293b;
+    font-size: 14px;
+}
+
+.topbar {
+    height: 60px;
+    background: #fff;
+    border-bottom: 1px solid #e5e9f2;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    gap: 14px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 250px;
+}
+
+.logo {
+    width: 34px;
+    height: 34px;
+    background: #2f6fed;
+    color: #fff;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+}
+
+.brand h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.brand span {
+    font-size: 11px;
+    color: #64748b;
+}
+
+.company {
+    margin-left: auto;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25;
+}
+
+.company strong {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.company span {
+    font-size: 11px;
+    color: #64748b;
+}
+
+.logout-btn {
+    border: 1px solid #f1b5b5;
+    color: #dc2626;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    transition: 0.2s;
+}
+
+.logout-btn:hover {
+    background: #fef2f2;
+    color: #b91c1c;
+    border-color: #fca5a5;
+}
+
+.layout {
+    display: flex;
+}
+
+.sidebar {
+    width: 220px;
+    min-height: calc(100vh - 60px);
+    background: #fff;
+    border-right: 1px solid #e5e9f2;
+    padding: 10px 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar a,
+.submenu-toggle {
+    width: calc(100% - 14px);
+    min-height: 42px;
+    margin: 3px 7px;
+    border: none;
+    background: transparent;
+    color: #334155;
+    text-decoration: none;
+    padding: 10px 11px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 9px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.sidebar a i,
+.submenu-toggle span i {
+    width: 17px;
+    text-align: center;
+    flex-shrink: 0;
+    color: #334155;
+}
+
+.sidebar a:hover,
+.submenu-toggle:hover,
+.sidebar a.active,
+.submenu-toggle.active,
+.has-submenu.open .submenu-toggle {
+    background: #2f6fed;
+    color: #fff;
+}
+
+.sidebar a:hover i,
+.submenu-toggle:hover i,
+.submenu-toggle:hover span i,
+.sidebar a.active i,
+.submenu-toggle.active i,
+.submenu-toggle.active span i,
+.has-submenu.open .submenu-toggle i,
+.has-submenu.open .submenu-toggle span i {
+    color: #fff;
+}
+
+.submenu-toggle {
+    justify-content: space-between;
+}
+
+.submenu-toggle span {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.arrow {
+    width: auto !important;
+    font-size: 11px;
+    transition: transform 0.2s ease;
+}
+
+.has-submenu.open .arrow {
+    transform: rotate(180deg);
+}
+
+.submenu {
+    display: none;
+    padding-left: 20px;
+    padding-right: 7px;
+}
+
+.has-submenu.open .submenu {
+    display: block;
+}
+
+.submenu a {
+    width: calc(100% - 7px);
+    min-height: 40px;
+    margin: 3px 0;
+    padding: 9px 10px;
+    font-size: 12.5px;
+}
+
+.content {
+    flex: 1;
+    padding: 16px;
+}

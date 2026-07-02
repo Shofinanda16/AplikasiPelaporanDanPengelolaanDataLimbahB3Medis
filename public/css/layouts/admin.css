@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f3f5f9;
+    color: #1e293b;
+    font-size: 14px;
+}
+
+/* TOPBAR */
+.topbar {
+    height: 60px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e9f2;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    gap: 14px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 250px;
+}
+
+.logo {
+    width: 34px;
+    height: 34px;
+    background: #2f6fed;
+    color: #ffffff;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+}
+
+.brand h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.brand span {
+    font-size: 11px;
+    color: #64748b;
+}
+
+.company {
+    margin-left: auto;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25;
+}
+
+.company strong {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.company span {
+    font-size: 11px;
+    color: #64748b;
+}
+
+/* LOGOUT */
+.logout-btn {
+    border: 1px solid #f1b5b5;
+    color: #dc2626;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    transition: 0.2s;
+}
+
+.logout-btn:hover {
+    background: #fef2f2;
+    color: #b91c1c;
+    border-color: #fca5a5;
+}
+
+/* LAYOUT */
+.layout {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 220px;
+    min-height: calc(100vh - 60px);
+    background: #ffffff;
+    border-right: 1px solid #e5e9f2;
+    padding: 10px 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar a {
+    width: calc(100% - 14px);
+    min-height: 42px;
+    margin: 3px 7px;
+    border: none;
+    background: transparent;
+    color: #334155;
+    text-decoration: none;
+    padding: 10px 11px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 9px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.sidebar a i {
+    width: 17px;
+    text-align: center;
+    flex-shrink: 0;
+    color: #334155;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background: #2f6fed;
+    color: #ffffff;
+}
+
+.sidebar a:hover i,
+.sidebar a.active i {
+    color: #ffffff;
+}
+
+/* CONTENT */
+.content {
+    flex: 1;
+    padding: 16px;
+}

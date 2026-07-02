@@ -1,0 +1,464 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    min-height:100vh;
+    overflow:hidden;
+
+    background:linear-gradient(
+        135deg,
+        #2563eb 0%,
+        #23408e 100%
+    );
+
+    position:relative;
+}
+
+/* CORAK */
+
+body::before{
+    content:"";
+    position:absolute;
+
+    width:700px;
+    height:700px;
+
+    border-radius:50%;
+
+    background:
+    rgba(255,255,255,.04);
+
+    top:-280px;
+    right:-220px;
+}
+
+body::after{
+    content:"";
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    border-radius:50%;
+
+    border:
+    1px solid rgba(255,255,255,.05);
+
+    bottom:-200px;
+    left:-120px;
+}
+
+/* WRAPPER */
+
+.login-container{
+    width:1180px;
+    max-width:95%;
+
+    min-height:100vh;
+
+    margin:auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:60px;
+
+    position:relative;
+    z-index:2;
+}
+
+/* ==========================
+   INFORMASI KIRI
+========================== */
+
+.info-section{
+    flex:1;
+    color:white;
+}
+
+.company-header{
+    display:flex;
+    align-items:center;
+    gap:18px;
+
+    margin-bottom:30px;
+}
+
+.hero-logo{
+    width:100px;
+    height:auto;
+    object-fit:contain;
+}
+
+.company-info h4{
+    margin:0;
+    font-size:20px;
+    font-weight:700;
+}
+
+.company-info span{
+    font-size:14px;
+    opacity:.85;
+}
+
+.info-section h1{
+    font-size:45px;
+    font-weight:800;
+    line-height:1.15;
+
+    max-width:620px;
+
+    margin-bottom:18px;
+}
+
+.info-section p{
+    font-size:17px;
+    line-height:1.8;
+
+    max-width:600px;
+
+    color:
+    rgba(255,255,255,.92);
+
+    margin-bottom:30px;
+}
+
+/* ==========================
+   FITUR
+========================== */
+
+.feature-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(2, 220px);
+
+    gap:14px;
+}
+
+.feature-card{
+    background:
+    rgba(255,255,255,.08);
+
+    border:
+    1px solid rgba(255,255,255,.10);
+
+    border-radius:16px;
+
+    padding:18px;
+
+    min-height:105px;
+
+    transition:.3s ease;
+
+    cursor:pointer;
+}
+
+.feature-card:hover{
+    transform:translateY(-5px);
+
+    background:
+    rgba(255,255,255,.15);
+}
+
+.feature-card i{
+    font-size:22px;
+    margin-bottom:12px;
+}
+
+.feature-card h3{
+    font-size:16px;
+    margin-bottom:6px;
+}
+
+.feature-card small{
+    font-size:12px;
+    opacity:.85;
+}
+
+.feature-card.laporan{
+    grid-column:span 2;
+}
+
+/* ==========================
+   LOGIN CARD
+========================== */
+
+.login-card{
+    width:390px;
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:30px;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.18);
+}
+
+.login-header{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.login-logo{
+    width:120px;
+    margin-bottom:12px;
+}
+
+.login-header h2{
+    font-size:28px;
+    font-weight:800;
+
+    color:#1e293b;
+
+    margin-bottom:8px;
+}
+
+.login-header p{
+    color:#64748b;
+    font-size:14px;
+}
+
+/* ==========================
+   ALERT
+========================== */
+
+.login-alert{
+    background:#fef2f2;
+    color:#dc2626;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    margin-bottom:18px;
+
+    font-size:14px;
+    text-align:center;
+}
+
+/* ==========================
+   FORM
+========================== */
+
+.form-group{
+    margin-bottom:18px;
+}
+
+.form-group label{
+    display:block;
+
+    margin-bottom:8px;
+
+    font-size:14px;
+    font-weight:700;
+
+    color:#111827;
+}
+
+/* INPUT ICON */
+
+.input-wrapper{
+    position:relative;
+}
+
+.input-wrapper i{
+    position:absolute;
+
+    left:14px;
+    top:50%;
+
+    transform:
+    translateY(-50%);
+}
+
+.input-wrapper input{
+    width:100%;
+
+    height:48px;
+     font-size:14px;
+    border:1px solid #dbe2ea;
+
+    border-radius:12px;
+
+    padding-left:42px;
+    padding-right:15px;
+
+    outline:none;
+
+    transition:.2s;
+}
+
+.input-wrapper input:focus{
+    border-color:#2563eb;
+}
+
+/* SELECT */
+
+.select-wrapper{
+    position:relative;
+}
+
+.select-wrapper select{
+    width:100%;
+    font-size:14px;
+    height:48px;
+
+    border:1px solid #dbe2ea;
+
+    border-radius:12px;
+
+    padding:0 40px 0 15px;
+
+    appearance:none;
+
+    outline:none;
+
+    cursor:pointer;
+}
+
+.select-wrapper select:focus{
+    border-color:#2563eb;
+}
+
+.select-arrow{
+    position:absolute;
+
+    right:14px;
+    top:50%;
+
+    transform:
+    translateY(-50%);
+
+    pointer-events:none;
+
+    color:#2563eb;
+}
+
+/* ==========================
+   BUTTON LOGIN
+========================== */
+
+.login-btn{
+    width:100%;
+    height:50px;
+    border:none;
+    border-radius:12px;
+    background:#2563eb;
+    color: #fff;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    transition:.3s;
+}
+
+.login-btn:hover{
+    background:#1d4ed8;
+    color: #fff;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 992px){
+
+    body{
+        overflow:auto;
+    }
+
+    .login-container{
+        flex-direction:column;
+        gap:40px;
+        padding:40px 20px;
+    }
+
+    .info-section{
+        text-align:center;
+    }
+
+    .company-header{
+        justify-content:center;
+    }
+
+    .info-section h1{
+        font-size:42px;
+        max-width:100%;
+    }
+
+    .feature-grid{
+        justify-content:center;
+        grid-template-columns:
+        repeat(2,minmax(180px,220px));
+    }
+
+    .login-card{
+        width:100%;
+        max-width:520px;
+    }
+}
+
+@media (max-width:768px){
+
+    body::before,
+    body::after{
+        display:none;
+    }
+
+    .login-container{
+        padding:25px 15px;
+    }
+
+    .company-header{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .hero-logo{
+        width:90px;
+    }
+
+    .info-section h1{
+        font-size:34px;
+        line-height:1.2;
+    }
+
+    .feature-grid{
+        grid-template-columns:1fr;
+        width:100%;
+    }
+
+    .feature-card.laporan{
+        grid-column:auto;
+    }
+
+    .login-card{
+        width:100%;
+        max-width:100%;
+        padding:25px;
+    }
+
+    .feature-card{
+        min-height:auto;
+    }
+
+    .login-card{
+        margin-bottom:30px;
+    }
+
+    .info-section{
+        margin-top:20px;
+    }
+
+}

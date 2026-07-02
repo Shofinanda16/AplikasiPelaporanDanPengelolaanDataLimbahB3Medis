@@ -1,0 +1,125 @@
+@page{
+    margin:25px 35px;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#111827;
+    font-size:11px;
+}
+
+/* KOP */
+
+.report-kop{
+    width:100%;
+    display:table;
+    border-bottom:3px solid #23408e;
+    padding-bottom:14px;
+    margin-bottom:20px;
+} 
+
+.kop-logo{
+    width:120px;
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+}
+
+.kop-logo img{
+    width:80px;
+    height:auto;
+}
+
+.kop-text{
+    display:table-cell;
+    text-align:center;
+    vertical-align:middle;
+}
+
+.kop-text h1{
+    margin:0 0 6px;
+    font-size:20px;
+    font-weight:700;
+    text-transform:uppercase;
+}
+
+.kop-text h2{
+    margin:0 0 5px;
+    font-size:17px;
+    font-weight:700;
+}
+
+.kop-text p{
+    margin:0;
+    font-size:11px;
+    color:#475569;
+}
+
+/* INFO */
+
+.report-info{
+    margin-bottom:16px;
+    font-size:12px;
+}
+
+.report-info td{
+    padding:3px 8px 3px 0;
+}
+
+.label{
+    width:120px;
+    font-weight:bold;
+}
+
+/* TABEL */
+
+.report-table-formal{
+    width:100%;
+    border-collapse:collapse;
+    border:1px solid #1f2937;
+    font-size:11px;
+}
+
+.report-table-formal th{
+    background:#23408e;
+    color:#fff;
+    border:1px solid #334155;
+    padding:8px 6px;
+}
+
+.report-table-formal td{
+    border:1px solid #334155;
+    padding:6px;
+    text-align:center;
+}
+
+.report-table-formal tbody tr:nth-child(even) td{
+    background:#f8fafc;
+}
+
+.total-row td{
+    background:#f3f4f6;
+    font-weight:bold;
+}
+
+/* TTD */
+
+.report-signature{
+    margin-top:30px;
+    text-align:right;
+}
+
+.signature-box{
+    width:220px;
+    display:inline-block;
+    text-align:center;
+}
+
+.signature-box .date{
+    margin-bottom:55px;
+}
+
+.signature-box .name{
+    font-weight:bold;
+    text-decoration:underline;
+}

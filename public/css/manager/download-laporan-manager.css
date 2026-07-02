@@ -1,0 +1,144 @@
+@page{
+    margin:25px 35px;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#111827;
+    font-size:11px;
+}
+
+/* ===== KOP ===== */
+
+.report-kop{
+    text-align:center;
+    border-bottom:3px solid #1e3a8a;
+    padding-bottom:12px;
+    margin-bottom:18px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.kop-logo{
+    width:120px;
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+}
+
+.kop-logo img{
+    width:80px;
+    height:auto;
+}
+
+.report-kop h1{
+    margin:0 0 6px;
+    font-size:20px;
+    font-weight:800;
+    text-transform:uppercase;
+}
+
+.report-kop h2{
+    margin:0 0 5px;
+    font-size:17px;
+    font-weight:700;
+}
+
+.report-kop p{
+    margin:0;
+    font-size:11px;
+    color:#475569;
+}
+
+/* ===== INFO ===== */
+
+.report-info{
+    margin-bottom:14px;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.report-info td{
+    padding:2px 6px 2px 0;
+}
+
+.label{
+    width:110px;
+    font-weight:bold;
+}
+
+/* ===== TABEL ===== */
+
+.report-table-formal{
+    width:100%;
+    border-collapse:collapse;
+    border:1px solid #1f2937;
+    font-size:11px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.report-table-formal th{
+    background:#1e3a8a;
+    color:white;
+    border:1px solid #334155;
+    padding:7px 5px;
+    text-align:center;
+}
+
+.report-table-formal td{
+    border:1px solid #334155;
+    padding:5px;
+    text-align:center;
+}
+
+.report-table-formal tbody tr:nth-child(even) td{
+    background:#f8fafc;
+}
+
+/* TOTAL */
+
+.total-row td{
+    background:#e5e7eb;
+    font-weight:bold;
+}
+
+.total-row td:first-child{
+    text-align:center;
+    padding-right:18px;
+}
+
+/* ===== TTD ===== */
+
+.report-signature{
+    margin-top:18px;
+    text-align:right;
+}
+
+.signature-box{
+    display:inline-block;
+    width:220px;
+    text-align:center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.signature-box .date{
+    margin-bottom:40px;
+}
+
+.signature-box .name{
+    font-weight:700;
+    text-decoration:underline;
+}
+
+.signature-box .name1{
+    font-weight:700;
+}
+
+/* PAGE BREAK */
+
+table{
+    page-break-inside:auto;
+}
+
+tr{
+    page-break-inside:avoid;
+}
